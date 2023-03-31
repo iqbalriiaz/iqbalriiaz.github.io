@@ -2,6 +2,21 @@ var menu = document.getElementById('menu');
 var nav = document.getElementById('nav');
 var exit = document.getElementById('exit');
 
+// if (jQuery(".Light").length > 0) {
+//     jQuery(".Light").lightGallery({
+//         selector: "a",
+//     });
+// }
+
+// //------------ Light gallery with thumbnail
+// if (jQuery(".LightThumb").length > 0) {
+//     jQuery(".LightThumb").lightGallery({
+//         selector: "a",
+//         exThumbImage: "data-exthumbimage",
+//     });
+// }
+
+
 // menu.addEventListener('click', function (e) {
 //     nav.classList.toggle('hide-mobile');
 //     e.preventDefault();
