@@ -66,7 +66,7 @@ body {
 /* scroll gifs ends------------------------ */
 
 /* thumb image starts-----------------------------*/
-.modify-img {
+/* .modify-img {
     position: absolute;
     left: 0;
     right: 0;
@@ -139,7 +139,7 @@ svg {
         transform: scale(1.8);
         opacity: 0;
     }
-}
+} */
 
 
 /* thumb image ends-----------------------------*/
