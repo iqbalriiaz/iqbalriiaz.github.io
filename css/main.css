@@ -29,7 +29,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     flex-wrap: wrap;
-    justify-content: baseline;
+    justify-content: center;
     margin: 0 -10px;
 }
 
@@ -45,7 +45,7 @@ body {
 
 .grid-item:last-child {
     /* grid-column: 1 / -1; */
-    width: 225%;
+    width: 200%;
 }
 
 
