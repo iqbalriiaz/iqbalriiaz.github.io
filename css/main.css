@@ -6,26 +6,110 @@ body {
     font-family: 'Poppins', 'sans-serif';
 }
 
-/* scroll gifs starts------------------------ */
 
-
-
-/* .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: baseline;
-    margin: 0 -10px;
+/* dialog image preview starts-----------*/
+.image-container img {
+    width: 15%;
+    object-fit: fill;
+    cursor: pointer;
 }
 
-.grid-item {
-    flex-basis: calc(25% - 20px);
-    margin: 0 10px 20px;
-} */
+.image-container img.full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.dialog-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.dialog-box.dialog-box-1 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-22%, -50%);
+}
+
+.dialog-box.dialog-box-2 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-22%, -50%);
+}
+
+
+.dialog-box.dialog-box-3 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-22%, -50%);
+}
+
+
+
+.dialog-box img {
+    max-width: 95%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .image-container img {
+        width: 50%;
+        object-fit: fill;
+        cursor: pointer;
+    }
+
+    .dialog-box img {
+        max-width: 120%;
+        max-height: 120%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .dialog-box.dialog-box-1 {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%, -50%);
+    }
+
+    .dialog-box.dialog-box-2 {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%, -50%);
+    }
+
+
+    .dialog-box.dialog-box-3 {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%, -50%);
+    }
+
+
+}
+
+/* dialog image preview ends-----------*/
+
 
 .grid-container {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px; */
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     flex-wrap: wrap;
@@ -64,8 +148,6 @@ body {
         object-fit: cover;
     }
 
-
-
 } */
 
 @media screen and (max-width: 768px) {
@@ -95,85 +177,6 @@ body {
 
 /* scroll gifs ends------------------------ */
 
-/* thumb image starts-----------------------------*/
-/* .modify-img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.img {
-    position: relative;
-    padding-top: calc(50% / 0.6);
-    height: 0;
-}
-
-.img img {
-    height: 100%;
-    object-fit: contain;
-}
-
-.video-icon {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.icon-inner {
-    position: relative;
-    z-index: 99;
-}
-
-svg {
-    opacity: 1;
-    -webkit-backdrop-filter: blur(15px) brightness(150%);
-    backdrop-filter: blur(15px) brightness(150%);
-    border-radius: 50%;
-}
-
-.img:hover .icon-inner:before,
-.img:hover .icon-inner:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-}
-
-.img:hover .icon-inner:after {
-    background-color: rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(15px) brightness(150%);
-    backdrop-filter: blur(15px) brightness(150%);
-    z-index: -1;
-    animation: pulse 1000ms infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.95);
-        opacity: 0.5;
-    }
-
-    100% {
-        transform: scale(1.8);
-        opacity: 0;
-    }
-} */
-
-
-/* thumb image ends-----------------------------*/
-
 footer {
     background-color: #333;
     color: #fff;
@@ -195,12 +198,6 @@ footer p {
     padding: 0.2em 0.4em;
     border-radius: 0.2em;
 }
-
-/* .stack {
-    background-color: greenyellow;
-    padding: 0.2em 0.4em;
-    border-radius: 0.2em;
-} */
 
 .company-overview {
 

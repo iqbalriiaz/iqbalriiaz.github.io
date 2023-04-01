@@ -11,3 +11,13 @@ exit.addEventListener('click', function (e) {
     nav.classList.add('hide-mobile');
     e.preventDefault();
 });
+
+function showDialog(dialogBoxClass) {
+    var dialogContainer = document.querySelector("." + dialogBoxClass).parentElement;
+    dialogContainer.style.display = "block";
+}
+
+function hideDialog(dialogBoxClass) {
+    var dialogContainer = document.querySelector("." + dialogBoxClass).parentElement;
+    dialogContainer.style.display = "none";
+}
